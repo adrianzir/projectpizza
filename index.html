@@ -17,22 +17,12 @@
         <section class="cards bg-warning w-100 container">
             <h2 class="text-dark">{{productos}}</h2>
             
-                <table class="border border-success p-2">
-                    <thead>
-                        <tr>
-                        <td>nombre</td>
-                        <td>qty</td>
-                        <td>ingredientes</td>
-                        <td> precio</td>
-                        <td>+/-</td>
-                    </tr>
-                </thead>
-                    <tbody class="border border-success p-2">
-                        <card></card>
-                        <card></card>
-                        <card></card>
-                    </tbody>
-                </table>
+         <div class="table-pizzas d-flex flex-row py-5">
+            <card :dato="pizza1" :img="img1" :p="descriptionCarnes"></card>
+            <card :dato="pizza2" :img="img3" :p="descriptionQueso"></card>
+            <card :dato="pizza3" :img="img2" :p="descriptionMar"></card>
+            <card :dato="pizza4" :img="img4" :p="descriptionAnch"></card>
+
         </section>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
