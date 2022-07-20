@@ -11,13 +11,13 @@
     <script defer src="js/components.js"></script>
 
 </head>
-<body>
-    <section id="app" class="w-100 bg-dark p-5 text-center">
+<body class="bg-dark">
+    <section id="app" class="w-100 p-5 text-center">
         <h1 class="text-light">{{heading}}</h1>
-        <section class="cards bg-warning w-100 container">
+        <section class="cards bg-warning w-100 container rounded-4 py-2">
             <h2 class="text-dark">{{productos}}</h2>
             
-         <div class="table-pizzas d-flex flex-row py-5">
+         <div class="table-pizzas d-flex flex-row py-5 ">
             <card :dato="pizza1" :img="img1" :p="descriptionCarnes"></card>
             <card :dato="pizza2" :img="img3" :p="descriptionQueso"></card>
             <card :dato="pizza3" :img="img2" :p="descriptionMar"></card>
